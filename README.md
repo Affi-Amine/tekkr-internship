@@ -1,6 +1,6 @@
 # Tekkr Full Stack Hiring Challenge
 
-👋 Welcome to this full stack hiring challenge! ✨
+_👋 Welcome to this full stack hiring challenge! ✨_
 
 You should not spend more much than 3 hours solving this challenge -> if you find yourself spending more time, please stop and submit what you have.
 
@@ -10,8 +10,9 @@ The `web` directory contains all code for the frontend React application.
 The `server` directory contains all code for the backend application based on [Fastify](https://fastify.dev/).
 
 To get started:
-1. Run `npm install` in both directories to install dependencies. 
-2. Then, run `npm start` in both directories to start the backend and the frontend (they will auto-refresh as you change the code). The frontend runs on port 3000, backend on port 8000.
+1. Clone this repository
+2. Run `npm install` in both directories to install dependencies. 
+3. Then, run `npm start` in both directories to start the backend and the frontend (they will auto-refresh as you change the code). The frontend runs on port 3000, backend on port 8000.
 
 > You can add as many files and endpoints as you want, try to avoid changing existing code unless necessary.
 > You can also add dependencies as needed.
