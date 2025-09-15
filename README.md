@@ -7,7 +7,7 @@ You should not spend more much than 3 hours solving this challenge -> if you fin
 ## Instructions
 
 The `web` directory contains all code for the frontend React application.
-The `server` directory contains all code for the backend application based on Fastify.
+The `server` directory contains all code for the backend application based on [Fastify](https://fastify.dev/).
 
 To get started:
 1. Run `npm install` in both directories to install dependencies. 
