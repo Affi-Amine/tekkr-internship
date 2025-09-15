@@ -39,11 +39,12 @@ Take the existing app and add the following features:
 #### Additional Requirements
 - When reloading the page, the chat history must be preserved and the same chat must be selected as before the reload.
 - Errors should be handled gracefully
-- Use `shadcn/ui` components for all UI elements (https://ui.shadcn.com/docs).
+- Use `shadcn/ui` components (https://ui.shadcn.com/docs).
 - Use React Query for interactions with the backend (https://tanstack.com/query/latest).
-- It should be very easy for another developer to switch the LLM you used to another one (e.g. from OpenAI to Anthropic).
+- It should be very easy for another developer to replace the LLM you used with another one (e.g. from OpenAI to Anthropic).
 
 #### Out of scope
 - There's no need to persist anything in the backend, in-memory storage is fine.
 - Responsiveness or any other optimization for mobile devices is not required.
 - It is fine to assume there is only one user (no need for authentication or any sort of user context handling)
+- No need to write tests
