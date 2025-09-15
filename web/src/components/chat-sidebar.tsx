@@ -22,8 +22,8 @@ export function ChatSidebar(props: Props) {
     </Button>
     <hr />
     <div className={"flex flex-col gap-1 overflow-y-auto"}>
-      {  chats.map((chat => (
-          <div>
+      { chats.map((chat => (
+          <div key={chat.id}>
             <Button
               variant={props.selectedChatId === chat.id ? "secondary" : "ghost"}
               size={"sm"}
