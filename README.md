@@ -30,7 +30,7 @@ Take the existing app and add the following features:
    - When sending a message, there should be a loading indicator, then the response from the LLM should be displayed in the chat window.
 2. Implement an inline-preview for project plans.
     - When the user requests a "project plan" from the LLM, there should be an inline preview of the plan in the chat window.
-    - The preview should look like the in following image (the icons can be ignored, sections should be expandable/collapsible).
+    - The preview should look like the one in the following image (the icons can be ignored, but sections should be expandable/collapsible).
     - It must be possible for the plan to appear in the middle of a message (not just at the end or beginning).
 
 ![Project Plan Preview](./project-plan-preview.png)
