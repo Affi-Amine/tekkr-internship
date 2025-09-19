@@ -26,7 +26,7 @@ Once you are done, please push your code to a public GitHub repository and send 
 Take the existing app and add the following features:
 1. Implement the dummy chat window. Typed messages should be sent to the backend and handled by an LLM of your choice (out of Gemini, OpenAI, and Anthropic).
    - The user must be able to start a new chat by using the "New Chat" button.
-   - New chats should show up in the sidebar (the name doesn't matter) and must be selectable.
+   - New chats should show up in the sidebar (the names of the chats don't matter) and must be selectable.
    - When sending a message, there should be a loading indicator, then the response from the LLM should be displayed in the chat window.
 2. Implement an inline-preview for project plans.
     - When the user requests a "project plan" from the LLM, there should be an inline preview of the plan in the chat window.
@@ -40,7 +40,7 @@ Take the existing app and add the following features:
 #### Additional Requirements
 - When reloading the page, the chat history must be preserved and the same chat must be selected as before the reload.
 - Errors should be handled gracefully
-- Use `shadcn/ui` components (https://ui.shadcn.com/docs).
+- Use `shadcn/ui` frontend components, some of them have already been added (https://ui.shadcn.com/docs).
 - Use React Query for interactions with the backend (https://tanstack.com/query/latest).
 - It should be very easy for another developer to replace the LLM you used with another one (e.g. from OpenAI to Anthropic).
 
