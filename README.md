@@ -24,10 +24,11 @@ Once you are done, please push your code to a public GitHub repository and send 
 
 #### Features to Implement
 Take the existing app and add the following features:
-1. Implement the dummy chat window. Typed messages should be sent to the backend and handled by an LLM of your choice (out of Gemini, OpenAI, and Anthropic).
+1. Implement the existing chat window and turn it into an LLM-based chat. Typed messages should be sent to the backend and handled by an LLM of your choice (out of Gemini, OpenAI, and Anthropic).
    - The user must be able to start a new chat by using the "New Chat" button.
-   - New chats should show up in the sidebar (the names of the chats don't matter) and must be selectable.
+   - New chats should show up in the sidebar (the names of the chats don't matter) and the user must be able to switch between chats.
    - When sending a message, there should be a loading indicator, then the response from the LLM should be displayed in the chat window.
+   - When reloading the page, all chats should still be available.
 2. Implement an inline-preview for project plans.
     - When the user requests a "project plan" from the LLM, there should be an inline preview of the plan in the chat window.
     - The preview should look like the one in the following image (the icons can be ignored, but sections should be expandable/collapsible).
