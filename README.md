@@ -2,7 +2,7 @@
 
 _👋 Welcome to this full stack hiring challenge! ✨_
 
-Please don't spend much more than 3 hours solving this challenge -> if you find yourself spending more time, please stop and submit what you have.
+Please don't spend much more than 3-4 hours solving this challenge -> if you find yourself spending more time, please stop and submit what you have.
 
 ## Instructions
 
