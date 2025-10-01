@@ -39,9 +39,6 @@ A modern chat application with AI-powered project planning capabilities, built w
 ### Installation
 
 1. **Clone and navigate to the project:**
-   ```bash
-   cd hiring-test-full-stack
-   ```
 
 2. **Set up the backend:**
    ```bash
