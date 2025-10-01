@@ -3,7 +3,7 @@ import {Button} from "./ui/button";
 import {SendIcon} from "lucide-react";
 import {Textarea} from "./ui/textarea";
 
-export function ChatInputBox({onSend}: { onSend: (message: string) => void }) {
+export function ChatInputBox({onSend, disabled = false}: { onSend: (message: string) => void; disabled?: boolean }) {
   const [input, setInput] = useState("");
   const textAreaRef = useRef<HTMLTextAreaElement>(null);
 
@@ -42,10 +42,11 @@ export function ChatInputBox({onSend}: { onSend: (message: string) => void }) {
               onChange={onTextChange}
               onKeyDown={onKeyDown}
               placeholder="Type your message..."
+              disabled={disabled}
           />
-          <Button onClick={handleSend} disabled={!input.trim()}>
+          <Button onClick={handleSend} disabled={!input.trim() || disabled}>
             <SendIcon className={"me-2 h-5 w-5"}/>
-            Send
+            {disabled ? 'Sending...' : 'Send'}
           </Button>
         </div>
       </div>

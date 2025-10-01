@@ -4,6 +4,7 @@ import {createBrowserRouter, Outlet, RouterProvider} from "react-router-dom";
 import {HomePage} from "./pages/home-page";
 import {QueryClient, QueryClientProvider} from "@tanstack/react-query";
 import {ReactQueryDevtools} from "@tanstack/react-query-devtools";
+import {Toaster} from "./components/ui/toaster";
 
 const router = createBrowserRouter([
     {
@@ -25,11 +26,28 @@ const router = createBrowserRouter([
     }
 ]);
 
+// Create QueryClient with optimized configuration
+const queryClient = new QueryClient({
+    defaultOptions: {
+        queries: {
+            retry: 2,
+            staleTime: 5 * 60 * 1000, // 5 minutes
+            refetchOnWindowFocus: false,
+        },
+        mutations: {
+            retry: 1,
+        },
+    },
+});
+
 function App() {
-    return <QueryClientProvider client={new QueryClient()}>
-        <RouterProvider router={router} />
-        <ReactQueryDevtools />
-    </QueryClientProvider>
+    return (
+        <QueryClientProvider client={queryClient}>
+            <RouterProvider router={router} />
+            <Toaster />
+            <ReactQueryDevtools />
+        </QueryClientProvider>
+    );
 }
 
 export default App;

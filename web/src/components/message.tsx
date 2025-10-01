@@ -7,7 +7,7 @@ export type Message = { role: "user" | "assistant"; content: string };
 
 export function MessageContainer({ role, children }: React.PropsWithChildren<{ role: Message["role"] }>) {
     return (
-        <div className={cn("flex flex-col gap-2", role === "user" ? "items-end" : "items-start")}>
+        <div className={cn("flex flex-col gap-3 py-2", role === "user" ? "items-end" : "items-start")}>
             <div
                 className={
                     "flex flex-row items-center gap-1 rounded-full bg-accent py-1.5 pe-3 ps-1.5 text-xs font-semibold"
@@ -17,7 +17,12 @@ export function MessageContainer({ role, children }: React.PropsWithChildren<{ r
                 {role === "user" && <UserIcon className={"me-1 inline-block h-4 w-4"} />}
                 {role === "user" ? "You" : "Assistant"}
             </div>
-            <div className={cn(role === "user" ? "pe-2 ps-16" : "flex w-full flex-col items-start pe-16 ps-2")}>
+            <div className={cn(
+                "rounded-lg p-4 max-w-none",
+                role === "user" 
+                    ? "bg-primary text-primary-foreground ml-16 mr-2" 
+                    : "bg-muted/50 mr-16 ml-2 w-full"
+            )}>
                 {children}
             </div>
         </div>
